@@ -1,2 +1,2 @@
-# nastya-star.github.io
+# Stepanenko Nastya
 my first site
