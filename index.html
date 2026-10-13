@@ -15,9 +15,12 @@ body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.4 system-ui,-appl
 main{max-width:26rem;margin:0 auto;padding:4rem 1rem 3rem}
 header{text-align:center;margin-bottom:2.5rem}
 header p{margin:0;color:var(--mute);font-size:.8rem;letter-spacing:.14em}
-h1{margin:.4rem 0 0;font:italic 400 3.6rem/1.1 "Bodoni MT","Bodoni 72",Didot,"Didot LT STD",Georgia,"Times New Roman","Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP",serif;letter-spacing:-.01em}
+h1{margin:.4rem 0 0;font:italic 400 3.6rem/1.1 "Bodoni MT","Bodoni 72",Didot,"Didot LT STD",Georgia,"Times New Roman","Noto Serif",serif;letter-spacing:-.01em}
 .u h1,.u header p{font-style:normal;letter-spacing:0}
 :lang(ja) h1,:lang(zh) h1,:lang(ko) h1{letter-spacing:.08em}
+:lang(ja) h1{font-family:"Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP",serif}
+:lang(zh) h1{font-family:"Songti SC","Songti TC",SimSun,PMingLiU,"Noto Serif CJK SC",serif}
+:lang(ko) h1{font-family:AppleMyungjo,Batang,"Noto Serif CJK KR",serif}
 .card{background:var(--card);border:1px solid var(--line);border-radius:1rem;overflow:hidden;margin-bottom:1rem}
 .card a,.card div{display:flex;align-items:center;gap:1rem;padding:.9rem 1.1rem;color:inherit;text-decoration:none}
 .card a+a{border-top:1px solid var(--line)}
@@ -44,13 +47,13 @@ small{display:block;color:var(--mute);font-size:.82rem;overflow-wrap:anywhere}
 <section class="card" aria-label="Project"><div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 9h10v10a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2zM15.5 11.5h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2M5.5 9a2.5 2.5 0 0 1 2-4.3 3 3 0 0 1 5 0A2.5 2.5 0 0 1 15.5 9M9 12.5v5M12 12.5v5"/></svg><span><b>Beer Price Optimization</b><small>In development</small></span><svg class="r" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div></section>
 </main>
 <script>
-var t={de:"Hallo, ich bin",fr:"Bonjour, je suis",es:"Hola, soy",it:"Ciao, sono",pt:"Olá, eu sou",nl:"Hoi, ik ben",ca:"Hola, sóc",pl:"Cześć, jestem",cs:"Ahoj, jsem",sk:"Ahoj, som",sl:"Živjo, sem",hr:"Bok, ja sam",bs:"Zdravo, ja sam",hu:"Szia, a nevem",ro:"Bună, eu sunt",sv:"Hej, jag heter",da:"Hej, jeg hedder",nb:"Hei, jeg heter",no:"Hei, jeg heter",nn:"Hei, eg heiter",is:"Hæ, ég heiti",fi:"Hei, olen",et:"Tere, mina olen",lv:"Sveiki, es esmu",lt:"Labas, aš esu",tr:"Merhaba, ben",az:"Salam, mən",uz:"Salom, men",vi:"Xin chào, tôi là",id:"Halo, saya",ms:"Hai, saya",fil:"Kumusta, ako si",tl:"Kumusta, ako si",sw:"Habari, mimi ni",
-uk:"Слава Україні! Мене звати|Анастасія",ru:"Привет, я|Анастасия",be:"Прывітанне, я|Анастасія",bg:"Здравей, аз съм|Анастасия",sr:"Здраво, ја сам|Анастасија",mk:"Здраво, јас сум|Анастасија",kk:"Сәлем, мен|Анастасия",el:"Γεια σου, είμαι|Αναστασία",ka:"გამარჯობა, მე ვარ|ანასტასია",hy:"Բարև, ես|Անաստասիա",he:"שלום, אני|אנסטסיה",ar:"مرحبًا، أنا|أناستاسيا",fa:"سلام، من|آناستاسیا",ur:"سلام، میں|اناستاسیا",hi:"नमस्ते, मैं|अनास्तासिया",bn:"নমস্কার, আমি|আনাস্তাসিয়া",th:"สวัสดี ฉันชื่อ|อนาสตาเซีย",zh:"你好，我是|阿纳斯塔西娅",zt:"你好，我是|阿納斯塔西婭",ko:"안녕하세요, 저는|아나스타시아",ja:"こんにちは、|望生"},
-L=((navigator.languages||[])[0]||navigator.language||"en").toLowerCase(),l=L.split("-")[0],
-k=l=="zh"&&/tw|hk|mo|hant/.test(L)?"zt":l,s=t[k],h=document.documentElement;
-if(s){s=s.split("|");h.lang=L;g.textContent=s[0];n.textContent=s[1]||"Anastasiia";
-if(/^(ar|he|fa|ur)$/.test(l))g.parentNode.dir="rtl";
-if(/^(ja|zh|zt|ko|ar|he|fa|ur|hi|bn|th|ka|hy)$/.test(k))h.className="u"}
+var t={de:"Hallo, ich bin",fr:"Salut, je m'appelle",es:"Hola, soy",it:"Ciao, sono",pt:"Olá, eu sou",pl:"Cześć, jestem",tr:"Merhaba, ben",vi:"Xin chào, mình là",nl:"Hoi, ik ben",cs:"Ahoj, já jsem",
+uk:"Слава Україні! Мене звати|Анастасія",ru:"Привет, я|Анастасия",el:"Γεια, είμαι|Αναστασία",ka:"გამარჯობა, მე ვარ|ანასტასია",hy:"Բարև, ես|Անաստասիա",ar:"مرحبًا، أنا|أناستاسيا",he:"שלום, אני|אנסטסיה",fa:"سلام، من|آناستازیا",ur:"سلام، میں|اناستسیا",hi:"नमस्ते, मेरा नाम|अनास्तासिया","zh-Hans":"你好，我是|阿纳斯塔西娅","zh-Hant":"你好，我是|阿納斯塔西婭",ko:"안녕하세요, 저는|아나스타시아",ja:"こんにちは、私は|望生です",th:"สวัสดี ฉันชื่อ|อนาสตาเซีย"},
+L=(navigator.languages||[])[0]||navigator.language||"en",l=L.toLowerCase().split("-"),
+k=l[0]=="zh"?(l.includes("hant")||!l.includes("hans")&&/^(tw|hk|mo)$/.test(l[1])?"zh-Hant":"zh-Hans"):l[0],s=t[k],h=document.documentElement;
+if(s){s=s.split("|");h.lang=k[0]=="z"?k:L;g.textContent=s[0];n.textContent=s[1]||"Anastasiia";
+if(/^(ar|he|fa|ur)$/.test(k))g.parentNode.dir="rtl";
+if(/^(ja|zh|ko|ar|he|fa|ur|hi|th|ka|hy)/.test(k))h.className="u"}
 </script>
 </body>
 </html>
