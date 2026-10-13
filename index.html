@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Anastasiia Stepanenko</title>
+<meta name="description" content="Anastasiia Stepanenko — contacts and projects">
+<link rel="icon" href="data:,">
+<style>
+:root{--bg:#faf9f7;--fg:#1d1d1f;--mute:#77757a;--card:#fff;--line:#e6e3df;--hover:#f3f1ee}
+@media(prefers-color-scheme:dark){:root{--bg:#121214;--fg:#ececee;--mute:#9a989e;--card:#1b1b1e;--line:#2c2c30;--hover:#232327}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:26rem;margin:0 auto;padding:4rem 1rem 3rem}
+header{text-align:center;margin-bottom:2.5rem}
+header p{margin:0;color:var(--mute);font-size:.95rem}
+h1{margin:.3rem 0 0;font:400 3.2rem/1.2 "Snell Roundhand","Apple Chancery","Segoe Script","Brush Script MT","URW Chancery L",cursive}
+.card{background:var(--card);border:1px solid var(--line);border-radius:1rem;overflow:hidden;margin-bottom:1rem}
+.card a,.card div{display:flex;align-items:center;gap:.9rem;padding:.85rem 1rem;color:inherit;text-decoration:none}
+.card a+a{border-top:1px solid var(--line)}
+.card a:hover{background:var(--hover)}
+.card a:focus-visible{outline:2px solid var(--fg);outline-offset:-2px}
+i{flex:none;width:2.2rem;height:2.2rem;border:1px solid var(--line);border-radius:.6rem;display:grid;place-items:center;font-style:normal;font-size:.95rem;color:var(--mute)}
+b{display:block;font-weight:600;font-size:.95rem}
+small{display:block;color:var(--mute);font-size:.85rem;overflow-wrap:anywhere}
+.card a::after{content:"›";margin-left:auto;color:var(--mute);font-size:1.3rem}
+</style>
+</head>
+<body>
+<main>
+<header><p id="g">Hi, I am</p><h1 id="n">Anastasiia</h1></header>
+<nav class="card" aria-label="Contacts">
+<a href="https://instagram.com/prosto_nastya._" rel="me noopener" target="_blank"><i aria-hidden="true">◎</i><span><b>Instagram</b><small>prosto_nastya._</small></span></a>
+<a href="https://linkedin.com/in/anastasiia-stepanenko-1a0871327" rel="me noopener" target="_blank"><i aria-hidden="true">in</i><span><b>LinkedIn</b><small>Anastasiia Stepanenko</small></span></a>
+<a href="mailto:stepanenkon010@gmail.com"><i aria-hidden="true">@</i><span><b>Email</b><small>stepanenkon010@gmail.com</small></span></a>
+<a href="https://wa.me/491602328574" rel="noopener" target="_blank"><i aria-hidden="true">✆</i><span><b>WhatsApp</b><small>prosto_nastya._285</small></span></a>
+<a href="https://t.me/prostonastya11" rel="noopener" target="_blank"><i aria-hidden="true">➤</i><span><b>Telegram</b><small>@prostonastya11</small></span></a>
+</nav>
+<section class="card" aria-label="Project"><div><i aria-hidden="true">◇</i><span><b>Beer Price Optimization</b><small>In development</small></span></div></section>
+</main>
+<script>
+var t={de:["Hallo, ich bin","Anastasiia"],uk:["Слава Україні! Мене звати","Анастасія"],ru:["Привет, я","Анастасия"],ja:["こんにちは、","望生"]},
+l=((navigator.languages||[])[0]||navigator.language||"en").slice(0,2).toLowerCase(),s=t[l];
+if(s){document.documentElement.lang=l;g.textContent=s[0];n.textContent=s[1]}
+</script>
+</body>
+</html>
